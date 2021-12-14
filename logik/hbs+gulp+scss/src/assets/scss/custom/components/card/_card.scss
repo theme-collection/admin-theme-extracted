@@ -1,0 +1,39 @@
+.card {
+    box-shadow: $card-box-shadow;
+    margin-bottom: $grid-gutter-width;
+	
+    .card-header {
+		margin-bottom: 0;
+		border: 1px;
+		padding-bottom: 0;
+		.header-title {
+			.card-title {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.card-header {
+    .card-title {
+        margin-bottom: 0;
+    }
+}
+
+.card{
+	&.service-card{
+		margin-bottom: unset;
+		margin-top: $spacer * 1.5;
+		border: 1px solid rgba($black, .125);
+		box-shadow: unset !important;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.card{
+		.service-card{
+			>div{
+				flex-wrap: wrap;
+			}
+		}
+	}
+}

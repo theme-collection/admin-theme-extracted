@@ -1,0 +1,70 @@
+
+{{#extend 'layouts/dashboard/simple' title="signin" active="auth-sign-in" path="../../" }}
+    {{#content "content"}}   
+<div class="robot">
+   <div class="container h-100">
+      <div class="row align-items-center justify-content-center h-100">
+         <div class="col-lg-5 col-md-8">   
+            <div class="card" style="transform: translate(0px, 25px);">
+               <div class="card-header">
+                  <a href="{{path}}dashboard/index.html" class="navbar-brand d-flex align-items-center">
+                     {{> partials/components/logo }}
+                  </a>
+               </div>
+               <div class="card-body">
+                  <h5 class="text-start">Welcome aboard,</h5>
+                  <h5 class="text-start mb-3">sign in and get started.</h5>
+                  <form>
+                     <div class="row">
+                        <div class="col-lg-12">
+                           <div class="form-group">
+                              <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Username or Email address">
+                           </div>
+                        </div>
+                        <div class="col-lg-12">
+                           <div class="form-group">
+                              <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Password ">
+                           </div>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-between mb-3">
+                           <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="customCheck1">
+                              <label class="form-check-label" for="customCheck1">Remember Me</label>
+                           </div>
+                           <a href="#" class="text-dark">Forget Password?</a>
+                        </div>                                               
+                     </div>
+                     <button class="btn btn-primary text-white w-100">Sign in</button>                    
+                     <p class="my-3 text-start h6">or sign in with other accounts?</p>
+                     <div class="d-flex justify-content-center">
+                        <ul class="list-group list-group-horizontal list-group-flush">
+                           <li class="list-group-item border-0 pe-2">
+                              <a href="#"><img src="{{path}}assets/images/brands/01.png" class="img-fluid avatar avatar-30 avatar-rounded" alt="img60"></a>
+                           </li>
+                           <li class="list-group-item border-0 pe-2">
+                              <a href="#"><img src="{{path}}assets/images/brands/02.png" class="img-fluid avatar avatar-30 avatar-rounded" alt="gm"></a>
+                           </li>
+                           <li class="list-group-item border-0 pe-2">
+                              <a href="#"><img src="{{path}}assets/images/brands/03.png" class="img-fluid avatar avatar-30 avatar-rounded" alt="im"></a>
+                           </li>
+                           <li class="list-group-item border-0 pe-2">
+                              <a href="#"><img src="{{path}}assets/images/brands/04.png" class="img-fluid avatar avatar-30 avatar-rounded" alt="li"></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <p class="text-center text-dark mb-0">
+                        Don’t have an account? <a href="sign-up.html" class="text-secondary text-decoration-underline">Click here to sign up.</a>
+                     </p>
+                  </form>
+               </div>
+            </div>
+            <div class="auth-img">
+               <img src="{{path}}assets/images/auth/01.png" alt="page" class="signin-outer-img w-25">
+               <img src="{{path}}assets/images/auth/02.png" alt="robot" class="signin-robot-img w-25">
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{{/content}}
+{{/extend}}

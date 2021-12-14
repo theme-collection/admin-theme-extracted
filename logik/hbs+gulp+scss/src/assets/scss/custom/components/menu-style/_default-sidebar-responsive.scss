@@ -1,0 +1,51 @@
+@include media-breakpoint-down(xl) {
+    .sidebar {
+        &.sidebar-default {
+            &.sidebar-mini {
+                &.sidebar-boxed {
+                    transform: translateX(-130%);    
+                }
+                transform: translateX(-100%);
+            }
+        }
+    }
+    .sidebar-default.sidebar-mini.sidebar-boxed+.main-content,
+    .sidebar-default.sidebar-boxed+.main-content,
+    .sidebar-default.sidebar-mini+.main-content,
+    .sidebar-default+.main-content {
+        margin-left: 0;
+    }
+    .sidebar-default {
+        &.sidebar-boxed {
+            &+.main-content {
+                .nav {
+                    &.navbar {
+                        margin: $spacer $spacer 0 $spacer;
+                    }
+                }
+                .content-inner {
+                    padding: calc(var(--bs-gutter-x, .75rem) * 1.25);
+                }
+            }
+        }
+    }
+    .search-input {
+        display: none;
+    }
+}
+.logo-mini{
+    display: none;
+    transition: all 300ms ease-in-out;
+}
+.sidebar-mini{
+    .iq-logo{
+        display: none;
+        transition: all 300ms ease-in-out;
+        transform: translateX(-100%) scale(0);
+        opacity: 0;
+    }
+    .logo-mini{
+        display: block;
+        transition: all 300ms ease-in-out;
+    }
+}

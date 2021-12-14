@@ -1,0 +1,98 @@
+
+{{#extend 'layouts/dashboard/simple' title="signup" active="auth-sign-up" path="../../" }}
+    {{#content "content"}}
+   <div class="signup-robot">
+      <div class="container h-100">
+         <div class="row align-items-center justify-content-center h-100">
+            <div class="col-md-5">
+               <div class="card" style="transform: translate(0px, 25px);">
+                  <div class="card-header">
+                     <a href="{{path}}dashboard/index.html" class="navbar-brand d-flex align-items-center justify-content-center">
+                        {{> partials/components/logo }}
+                     </a>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="text-center mb-2">Welcome aboard, sign in and get started.</h5>
+                     <form>
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="form-group">
+                                 <input type="text" class="form-control" id="full-name" placeholder="First Name">
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-group">                                 
+                                 <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="form-group">
+                                 <input type="email" class="form-control" id="email" placeholder="Email">
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="form-group">
+                                 
+                                 <input type="text" class="form-control" id="phone" placeholder="Phone No ">
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="form-group">
+                                 
+                                 <input type="password" class="form-control" id="password" placeholder="Password">
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="form-group">
+                                 <input type="password" class="form-control" id="confirm-password" placeholder="Confirm-Password">
+                              </div>
+                           </div>
+                           <div class="col-lg-12 d-flex justify-content-center">
+                              <div class="form-check mt-2">
+                                 <input type="checkbox" class="form-check-input" id="customCheck1">
+                                 <label class="form-check-label text-dark" for="customCheck1">I agree with the terms of use</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="text-center my-2">
+                           <button type="button" class="btn btn-primary">Sign Up</button>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                           <ul class="list-group list-group-horizontal list-group-flush">
+                              <li class="list-group-item border-0 pe-2">
+                                 <a href="#"><img src="{{path}}assets/images/brands/01.png" class="img-fluid avatar avatar-30 avatar-rounded" alt="fb"></a>
+                              </li>
+                              <li class="list-group-item border-0 pe-2">
+                                 <a href="#"><img src="{{path}}assets/images/brands/02.png" class="img-fluid avatar avatar-30 avatar-rounded" alt="gm"></a>
+                              </li>
+                              <li class="list-group-item border-0 pe-2">
+                                 <a href="#"><img src="{{path}}assets/images/brands/03.png" class="img-fluid avatar avatar-30 avatar-rounded" alt="im"></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </form>
+                     <div class="new-account text-center mt-2">
+                        <p class="mb-0 text-dark">Already have an Account <a class="text-secondary text-decoration-underline" href="{{path}}dashboard/auth/sign-in.html">Sign in</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="auth-img">
+         <div class="signup-bottom-img">
+            <svg width="250" height="250" viewBox="0 0 527 462" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <g id="Group">
+               <path id="Vector" d="M449.982 440.777L523 435.655L512.359 304.116L440.211 309.206C429.369 272.355 411.968 238.034 389.212 207.429L438.739 158.961L336.507 67.8955L287.349 115.989C250.74 94.1909 209.68 78.3574 165.642 70.144V4H24.3246V70.144C-31.1582 80.5122 -81.9895 102.904 -125.024 134.196L-178.9 90.5682L-271.527 190.222L-217.182 234.162C-239.837 271.7 -254.896 313.735 -260.485 358.518L-333 363.608L-322.392 495.147L-249.107 489.994C-237.93 526.314 -220.361 560.105 -197.573 590.241L-248.772 640.333L-146.541 731.368L-94.9734 680.963C-59 702.043 -18.7766 717.314 24.2911 725.371V795.263H165.608V725.371C220.054 715.222 270.015 693.486 312.48 663.1L368.833 708.726L461.46 609.073L405.576 563.852C428.499 526.72 443.859 485.122 449.982 440.777ZM94.9998 504.61C32.8912 504.61 -17.4715 457.609 -17.4715 399.647C-17.4715 341.716 32.8578 294.716 94.9998 294.716C157.108 294.716 207.471 341.716 207.471 399.647C207.471 457.578 157.108 504.61 94.9998 504.61Z" fill="#F7F7F7" stroke="#183372" stroke-width="6.384" stroke-miterlimit="10"/>
+               <path id="Vector_2" d="M320.046 399.647C320.046 515.634 219.287 609.635 95.0027 609.635C-29.2813 609.635 -130.007 515.634 -130.007 399.647C-130.007 283.661 -29.2813 189.628 95.0027 189.628C219.287 189.628 320.046 283.661 320.046 399.647Z" fill="#EAEFFB" stroke="#183372" stroke-width="6.384" stroke-miterlimit="10"/>
+               <path id="Vector_3" d="M207.468 399.616C207.468 457.578 157.105 504.579 94.9967 504.579C32.8881 504.579 -17.4746 457.578 -17.4746 399.616C-17.4746 341.685 32.8547 294.685 94.9967 294.685C157.105 294.685 207.468 341.685 207.468 399.616Z" fill="#F7F7F7" stroke="#183372" stroke-width="6.384" stroke-miterlimit="10"/>
+               <path id="Vector_4" d="M95.0017 124.983C251.411 124.983 389.315 242.281 389.315 399.647" stroke="#183372" stroke-width="6.384" stroke-miterlimit="10"/>
+               </g>
+            </svg>
+         </div>
+         <img src="{{path}}assets/images/auth/03.png" alt="bulp" class="signup-right-img w-25">
+      </div>
+   </div>
+   {{/content}}
+{{/extend}}

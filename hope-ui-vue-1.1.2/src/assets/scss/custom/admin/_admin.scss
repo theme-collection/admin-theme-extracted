@@ -1,0 +1,9 @@
+@include media-breakpoint-down(md) { 
+    .iq-admin{
+        margin-top: 5px;
+    }
+    .iq-admin-1{
+        margin-top: 5px;
+        margin-left: unset !important;
+    }
+ }

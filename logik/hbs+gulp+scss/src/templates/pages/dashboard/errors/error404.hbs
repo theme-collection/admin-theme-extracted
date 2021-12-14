@@ -1,0 +1,28 @@
+{{#extend "layouts/dashboard/simple" title="pages-error404"  active="pages-error404" path="../../" }}
+{{#content "content"}}
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+    <div class="error-404">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-xl-12">
+                    <h2 class="mb-0 text-dark text-center">Oops! This Page is Not Found.</h2>
+                    <p class="mt-2 text-dark text-center">The requested page dose not exist.</p>
+                    <div class="d-inline-block w-100 d-flex justify-content-center">
+                        <a href="{{path}}dashboard/index.html" class="btn btn-primary mt-3 text-white d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="19px" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                            </svg>
+                            Back to Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-img-1">
+                <img src="{{path}}assets/images/auth/09.png" alt="robot" class="error-img img-fluid">
+                <img src="{{path}}assets/images/auth/404.png" alt="error-404" class="error ">
+            </div>
+        </div>
+    </div>
+{{/content}}
+{{/extend}}
